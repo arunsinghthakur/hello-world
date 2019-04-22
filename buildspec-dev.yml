@@ -1,0 +1,20 @@
+version: 0.1
+
+phases:
+install:
+commands:
+
+pre_build:
+commands:
+
+build:
+commands:
+- mvn clean install
+- docker build -t hello-world .
+
+post_build:
+commands:
+
+artifacts:
+files:
+- '**/*'
